@@ -1,4 +1,4 @@
-package designpatterns.factory;
+package designpatterns.factory.simplefactory;
 
 public class CreateDocument {
     public static void main(String[] args) {

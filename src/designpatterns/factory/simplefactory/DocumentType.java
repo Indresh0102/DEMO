@@ -1,4 +1,4 @@
-package designpatterns.factory;
+package designpatterns.factory.simplefactory;
 
 public enum DocumentType {
     PRESENTATION,

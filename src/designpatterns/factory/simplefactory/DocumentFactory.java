@@ -1,4 +1,4 @@
-package designpatterns.factory;
+package designpatterns.factory.simplefactory;
 
 public class DocumentFactory {
     public static DocumentProcessor createDocumentProcessor(DocumentType documentType, String fileName) {

@@ -1,4 +1,4 @@
-package designpatterns.factory;
+package designpatterns.factory.simplefactory;
 
 public abstract class DocumentProcessor {
     private String fileName;
