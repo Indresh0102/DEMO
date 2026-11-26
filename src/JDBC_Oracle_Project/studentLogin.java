@@ -29,7 +29,7 @@ public class studentLogin {
             // Database connection details
             String url = "jdbc:oracle:thin:@//127.0.0.1:1521/FREEPDB1"; // "jdbc:oracle:thin:@//localhost:1521/orcl";
             String username = "STUDENT_APP"; // "SCOTT";
-            String password = "Indresh123#"; // "THEIR_SCOTT_PASSWORD";
+            String password = "PASSWORD"; // "THEIR_SCOTT_PASSWORD";
 
             // Read values from text fields
             String name = Name.getText().trim();
