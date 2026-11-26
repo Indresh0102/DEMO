@@ -15,6 +15,10 @@ public class SpreadsheetDocumentFactory extends DocumentFactory {
         return new SpreadsheetDocumentProcessor(getFileName());
     }
     public DocumentPrinter createDocumentPrinter(DocumentProcessor processor){
+        if(processor==null ||
+                processor.getDocumentType()!=DocumentType.SPREADSHEET){
+            throw new IllegalArgumentException("DocumentType not supported for SpreadsheetDocumentPrinter");
+        }
         return new SpreadsheetDocumentPrinter(processor);
     }
     public DocumentParser createDocumentParser(){

@@ -6,7 +6,7 @@ import designpatterns.factory.abstractfactory.processor.DocumentProcessor;
 
 public abstract class DocumentFactory {
     private String fileName;
-    DocumentFactory(String fileName) {
+    protected DocumentFactory(String fileName) {
         this.fileName = fileName;
     }
     public String getFileName() {

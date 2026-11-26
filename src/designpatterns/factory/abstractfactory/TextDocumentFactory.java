@@ -19,6 +19,10 @@ public class TextDocumentFactory extends DocumentFactory {
 
     @Override
     public DocumentPrinter createDocumentPrinter(DocumentProcessor processor) {
+        if(processor==null ||
+                processor.getDocumentType()!=DocumentType.TEXT){
+            throw new IllegalArgumentException("DocumentType not supported for TextDocumentPrinter");
+        }
         return new TextDocumentPrinter(processor);
     }
 
